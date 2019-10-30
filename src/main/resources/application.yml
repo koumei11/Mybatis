@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/freemarket
+    username: root
+    password: Test123!!!
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+  mapper-location: classpath*:/mybatis/mapper/*.xml
+  type-aliases-package: com.example.practicemybatis.model
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+    cache-enabled: false
